@@ -29,3 +29,5 @@ def do_deploy(archive_path):
         return True
     except:
         return False
+
+do_deploy("versions/web_static_20221225234350.tgz")
