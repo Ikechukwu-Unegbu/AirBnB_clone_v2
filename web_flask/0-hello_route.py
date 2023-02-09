@@ -17,10 +17,16 @@ def hello_hbnb():
     return "Hello HBNB!"
 
 
-@app.route("/hbnb")
+@app.route("/hbnb", strict_slashes=False)
 def hbnb():
     """Displays 'HBNB'."""
     return "HBNB"
+
+@app.route("/airbnb-onepage", strict_slashes=False)
+def hbnb_one():
+    """Displays 'HBNB'."""
+    return "Hello HBNB!"
+
 
 
 if __name__ == "__main__":
