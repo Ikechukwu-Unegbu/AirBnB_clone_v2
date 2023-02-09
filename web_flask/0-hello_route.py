@@ -17,7 +17,7 @@ def hello_hbnb():
     return "Hello HBNB!"
 
 
-@app.route("/hbnb", strict_slashes=False)
+@app.route("/hbnb")
 def hbnb():
     """Displays 'HBNB'."""
     return "HBNB"
@@ -25,3 +25,4 @@ def hbnb():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0")
+
